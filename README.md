@@ -8,3 +8,9 @@ Each unpacker is different, but they should all be generally easy and straight-f
 ```bash
 python main.py -f examples\obf.py
 ```
+
+## Unpackers
+```bash
+- Simple-Obfuscator
+- CxFreeze
+```
