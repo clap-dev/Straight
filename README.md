@@ -10,12 +10,8 @@ python main.py -f examples\obf.py
 ```
 
 ## Unpackers
-```bash
 - Simple-Obfuscator
-```
 
 ## To-Do
-```bash
 - Clean up CxFreeze unpacker and code reconstructor
 - Clean up Pyinstaller/Py2Exe unpacker and code reconstructor
-```
