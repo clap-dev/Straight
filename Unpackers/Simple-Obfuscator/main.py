@@ -36,7 +36,7 @@ class SimpleObfuscator():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='PyCompile will detect, unpack and decompile files packed with either Py2Exe or Pyinstaller'
+        description='Unpack scripts obfuscated with SimpleObfuscator.'
     )
     parser.add_argument(
         '-o',
