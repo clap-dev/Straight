@@ -20,12 +20,14 @@ class FunnyProtector:
           those :)
     '''
 
-    def __init__(self):
-        self.dll = ctypes.CDLL('./dlls/_protector.dll') if ctypes.sizeof(ctypes.c_voidp) == 8 else ctypes.CDLL('./dlls/_protector32.dll')
-        # Loading DLL
+    def __init__(self, file, output):
+        self.file = file
+        self.output = output
 
+        self.dll = ctypes.CDLL('./dlls/_protector.dll') if ctypes.sizeof(ctypes.c_voidp) == 8 else ctypes.CDLL('./dlls/_protector32.dll')
         self.dll.unXoring.restype = ctypes.c_wchar_p
-        # Setting return types
+
+        self.unpack()
 
     def decrypt(self, code, result=''):
         for char in code:
@@ -39,8 +41,8 @@ class FunnyProtector:
             )
         )
 
-    def unpack(self, file, output):
-        with open(file) as code:
+    def unpack(self):
+        with open(self.file) as code:
             code = code.read()
 
         code = self.decrypt(
@@ -50,8 +52,8 @@ class FunnyProtector:
         ).decode()
         # Unpacking the script
 
-        if output:
-            with open(output, 'w') as file:
+        if self.output:
+            with open(self.output, 'w') as file:
                 file.write(code)
                 file.close()
 
@@ -84,8 +86,7 @@ if __name__ == '__main__':
 
     # Parsing arguments passed into argparse
 
-    FunnyProtector = FunnyProtector()
-    FunnyProtector.unpack(
+    FunnyProtector = FunnyProtector(
         file=file,
         output=output
     )
