@@ -20,7 +20,7 @@ python main.py -f examples\obf.py
 
 ## Unpackers
 - Simple-Obfuscator
-- Funny-Protector
+- FunnyProtector
 
 ## To-Do
 - [ ] Clean up CxFreeze, Pyinstaller, and Py2Exe unpacker with code reconstructor
