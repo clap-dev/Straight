@@ -56,16 +56,11 @@ if __name__ == '__main__':
         help='Code (*.py) that is packed with SimpleObfuscator'
     )
 
-    # Creating argparse instance
-
     args = parser.parse_args()
-
-    file = args.file
-    output = args.output
 
     # Parsing arguments passed into argparse
 
-    SimpleObfuscator = SimpleObfuscator(
-        file=file,
-        uutput=output
+    SimpleObfuscator(
+        file=args.file,
+        uutput=args.output
     )
