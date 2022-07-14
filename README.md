@@ -24,8 +24,8 @@ python main.py -f examples\obf.py
 - PyProtector
 
 ## To-Do
+- [x] Create unpacker for https://github.com/caturmahdialfurqon/encrypt-python3
 - [ ] Clean up CxFreeze, Pyinstaller, and Py2Exe unpacker with code reconstructor
-- [ ] Create unpacker for https://github.com/caturmahdialfurqon/encrypt-python3
 
 ## Contributing
 Requests are welcome, please open an issue first with an example of the obfuscated script (any paste site works).
