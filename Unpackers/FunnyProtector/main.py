@@ -77,16 +77,11 @@ if __name__ == '__main__':
         help='Code (*.py) that is packed with FunnyProtector'
     )
 
-    # Creating argparse instance
-
     args = parser.parse_args()
-
-    file = args.file
-    output = args.output
 
     # Parsing arguments passed into argparse
 
-    FunnyProtector = FunnyProtector(
-        file=file,
-        output=output
+    FunnyProtector(
+        file=args.file,
+        output=args.output
     )
