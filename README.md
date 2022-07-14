@@ -22,6 +22,7 @@ python main.py -f examples\obf.py
 - SimpleObfuscator
 - FunnyProtector
 - PyProtector
+- Encrypt3
 
 ## To-Do
 - [x] Create unpacker for https://github.com/caturmahdialfurqon/encrypt-python3
