@@ -19,7 +19,7 @@ python main.py -f examples\obf.py
 ```
 
 ## Unpackers
-- Simple-Obfuscator
+- SimpleObfuscator
 - FunnyProtector
 - PyProtector
 
