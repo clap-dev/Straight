@@ -2,7 +2,7 @@
     <img src="https://i.imgur.com/WS1DgYi.png"/>
     <p>
       <a href="https://github.com/iclapcheeks/Straight/pulse">
-        <img alt="Last commit" src="https://img.shields.io/github/last-commit/lunarvim/LunarVim"/>
+        <img alt="Last commit" src="https://img.shields.io/github/last-commit/iclapcheeks/Straight"/>
       </a>
       <a href="https://github.com/iclapcheeks/Straight/blob/main/LICENSE">
         <img src="https://img.shields.io/github/license/iclapcheeks/Straight?style=flat-square&logo=GNU&label=License" alt="License">
