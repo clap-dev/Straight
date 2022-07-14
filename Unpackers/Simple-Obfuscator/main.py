@@ -11,10 +11,14 @@ class SimpleObfuscator():
     from hex to string and lastly base64 decode the strings.
     '''
 
-    def __init__(self, code):
+    def __init__(self, code, output):
         self.code = code
+        self.output = output
 
-    def unpack(self, output=None):
+    def unpack(self):
+        with open(self.file) as code:
+            code = code.read()
+
         code = base64.b64decode(
             bytearray.fromhex(
                 ''.join(
@@ -25,9 +29,10 @@ class SimpleObfuscator():
                 ).replace('\\x', '')
             ).decode()
         ).decode()
+        # Unpacking file
 
-        if output:
-            with open(output, 'w') as file:
+        if self.output:
+            with open(self.output, 'w') as file:
                 file.write(code)
                 file.close()
 
@@ -36,7 +41,7 @@ class SimpleObfuscator():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='Unpack scripts obfuscated with SimpleObfuscator.'
+        description='PyCompile will detect, unpack and decompile files packed with either Py2Exe or Pyinstaller'
     )
     parser.add_argument(
         '-o',
@@ -61,8 +66,6 @@ if __name__ == '__main__':
     # Parsing arguments passed into argparse
 
     SimpleObfuscator = SimpleObfuscator(
-        code=open(file).read()
+        file=file,
+        uutput=output
     )
-    SimpleObfuscator.unpack(output)
-
-    # Deobfuscating the script
