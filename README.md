@@ -26,6 +26,7 @@ python main.py -f examples\obf.py
 
 ## To-Do
 - [x] Create unpacker for https://github.com/caturmahdialfurqon/encrypt-python3
+- [ ] Finish [Hyperion](https://github.com/billythegoat356/Hyperion) unpacker [ 50% ]
 - [ ] Clean up CxFreeze, Pyinstaller, and Py2Exe unpacker with code reconstructor
 
 ## Contributing
