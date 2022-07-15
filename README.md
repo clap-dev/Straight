@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://i.imgur.com/WS1DgYi.png"/>
+    <img src="https://i.imgur.com/09P3PyQ.png"/>
     <p>
       <a href="https://github.com/iclapcheeks/Straight/pulse">
         <img alt="Last commit" src="https://img.shields.io/github/last-commit/iclapcheeks/Straight"/>
